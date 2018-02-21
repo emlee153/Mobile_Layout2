@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <title>코레일톡 모바일 페이지에 오신 것을 환영합니다.</title>
+    
+    <meta name="Subject" content="기차">
+    <meta name="Title" content="코레일톡">
+    <meta name="Description" content="열차예매정보">
+    <meta name="Keywords" content="기차,열차,기차예매,열차예매,내일로,코레일톡,KTX,KTX예매,교통수단,기차표,기차시간표,열차시간표">
+    <meta name="Author" content="이은미">
+    
+    
+   
+    <script type="text/javascript">
+    <!--//주소창 자동 닫힘
+    window.addEventListener("Load", function(){
+                            setTimeout(loaded, 100);
+                            }, false);
+        function loaded(){
+            window.scrollTo(0, 1);
+        }
+        //-->
+    
+    </script>
+    <!-- 데스크탑 브라우저의 탭에 아이콘 추가 -->
+    <link href="m_icon_128.png" rel="icon" /><!--또는-->
+    <link href="m_icon_128.ico" rel="icon" type="image/x-icon" />
+    
+    
+    <!-- iPhone의 반사광 효과가 없는 경우 -->
+    <link href="short_apple1.png" rel="apple-touch-icon-precomposed" />
+    
+    
+    <!--iPhone의 반사광이 있는 경우-->
+    <link href="short_apple2.png" rel="apple-touch-icon" />
+    
+    
+    <!-- iPhone icon(Retina) -->
+    <link href="m_icon_114.png" sizes="114x114" rel="apple-touch-icon" />
+    <!-- apple-touch-icon- 터치기반인 것.IOS 종류들을 의미함.-->
+    
+    
+    <!-- iPad icon(Retina) -->
+    <link href="apple-114x114.png" sizes="144x144" rel="apple-touch-icon" />
+    
+    
+    <!-- Android png의 경우 -->
+    <link href="favicon.png" rel="shortcut icon" />
+    <!--숏컷은 바로가기 아이콘, 아이콘은 브라우저 창에서의 아이콘을 의미.-->
+    
+    
+    <!-- Android ico의 경우 -->
+    <link href="favicon.ico" rel="shortcut icon" /><!-- 또는 -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    
+
+</head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="drop.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="colorguide.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+
+        
+        /* 헤더 버튼 부분 */
+        .hd .btnbox{ position:absolute; width:100%; height:24px; top:15px; display:block; z-index:150; }
+        .hd .btn{ background-repeat:no-repeat; 
+                    top:5px;}
+        .hd .menubt1{ display:block; width:30px; height:24px; float:left; margin-left:10px; }
+        .hd .menubt2{ display:block; width:30px; height:24px; float:right; margin-right:5px; background-image:url("./src/dropdown_60x24.png");
+        background-position:-30px 0px; background-repeat:no-repeat; }
+        .hd .menubt2 label{ cursor:pointer; display:block; width:100%; height:100%; }
+        .hd .btnbox{ z-index:150; }
+        
+        
+        /* 본문 -페이지1 */
+        .page{ width:85%; position:relative; margin:0 auto;}
+        .pageban img{ display:block; width:315px; margin:0 auto; }
+        .page li{ display:block; float:left; width:47%; height:47%; margin-left:2%; margin-bottom:20px; }
+        .page li img{ display:block; width:150px; box-sizing:border-box; }
+        .page li span{ display:block; width:80px; height:20px; font-size:0.8em; 
+                    background-color:#ccc; color:#333; border-radius:5px; text-align:center;
+                    line-height:20px; font-weight:500; border:1px solid #999; margin:0 auto;
+                    margin-top:7px;}
+        .page img{ border:2px solid #ccc; }
+        .pagelink{ display:block; width:100%; }
+        .page .title{ text-align:center; line-height:40px; display:block; width:100%; height:50px; }
+        #page1 .pageban{ width:100%; height:700px; }
+        
+        #page2 .w500px{ clear:both; display:block; float:left; width:96%; margin:0 auto; }
+        #page2 .w500px img { width:315px; margin:0 auto; } 
+        #page2{ height:200px;}
+        #page2 .pageban{ clear:both; width:100%; height:800px; }
+        #page2 .title{ text-align:center; line-height:40px; display:block; width:100%; height:700px; }
+        
+        #page3{ width:85%; position:relative; margin:0 auto; padding-top:600px }
+        #page3 .title{ text-align:center; line-height:40px; display:block; width:100%; height:50px; }
+        #page3 li{ display:block; float:left; width:47%; height:47%; margin-left:2%; margin-bottom:20px; }
+        #page3 li img{ display:block; width:150px; box-sizing:border-box; }
+
+        /* 푸터 영역 */
+        .uponft{ position:relative; width:100%; height:2250px;}
+        .ft{ width:100%; height:auto; background-color:#222; bottom:0; }
+        .ft .copyright{ display:block; color:#fff; font-size:0.7em;
+            line-height:17px;}
+    </style>
+<body>
+    <header class="hd maincolor">
+        <li class="logo">
+            <a href="./index.html"><img src="./src/logo2.png" alt="로고"></a>
+        </li>
+        <div class="btnbox">
+            <li class="btn menubt1">
+                <a href="index.html">
+                <img src="./src/home_30x24.png" alt="">
+                </a>
+            </li>
+            <li class="btn menubt2">
+                <label for="drop" class="drop">
+                </label>
+            </li>
+        </div>
+    </header>
+    <div class="blank"></div>
+    <input type="checkbox" id="drop" name="drop">
+    <div class="dropmenu">
+        <ul>
+            <li class="droplist subcolor"><a href="sub1.html#page1">중부내륙관광열차</a></li>
+            <li class="droplist subcolor"><a href="sub1.html#page2">정선아리랑열차</a></li>
+            <li class="droplist subcolor"><a href="sub1.html#page3">남도해양열차</a></li>
+            <li class="droplist subcolor"><a href="sub1.html#page4">서해금빛열차</a></li>
+            <li class="droplist subcolor"><a href="sub1.html#page5">평화열차 DMZ</a></li>
+            <li class="droplist subcolor"><a href="sub1.html#page6">레일크루즈해랑</a></li>
+            <!--<li class="droplist"><a href="sub1.html#page7">바다열차</a></li>
+            <li class="droplist"><a href="sub1.html#page8">교육열차</a></li>-->
+        </ul>
+    </div>
+    <div class="blank"></div>
+    <section id="page1" class="page">
+        <h4 class="title">중부내륙관광열차</h4>
+        <div class="pageban"><img src="./src/sub11_page1_img1.jpg" alt="중부내륙관광열차"></div>
+        
+        <a href="#" class="pagelink" >
+        <li>
+            <img src="./src/sub11_page1_img2.jpg" alt="열차이미지">
+            <span href="./sub2.html">상세보기</span>
+        </li>
+        </a>
+        
+        <a href="#" class="pagelink" >
+        <li>
+            <img src="./src/sub11_page1_img3.jpg" alt="열차이미지">
+            <span href="./sub.html">상세보기</span>
+        </li>
+        </a>
+        
+        <a href="#" class="pagelink" >
+        <li>
+            <img src="./src/sub11_page1_img4.jpg" alt="열차이미지">
+            <span href="./sub.html">상세보기</span>
+        </li>
+        </a>
+        
+        <a href="#" class="pagelink" >
+        <li>
+            <img src="./src/sub11_page1_img5.jpg" alt="열차이미지">
+            <span href="./sub.html">상세보기</span>
+        </li>
+        </a>
+        
+        <a href="#" class="pagelink" >
+        <li>
+            <img src="./src/sub11_page1_img6.jpg" alt="열차이미지">
+            <span href="./sub.html">상세보기</span>
+        </li>
+        </a>
+        
+        <a href="#" class="pagelink" >
+        <li>
+            <img src="./src/sub11_page1_img7.jpg" alt="열차이미지">
+            <span href="./sub.html">상세보기</span>
+        </li>
+        </a>
+        
+    </section>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+
+    <section id="page2" class="page">
+        <h4 class="title">정선아리랑열차</h4>
+        <div class="pageban"><img src="./src/sub11_page2_img1.jpg" alt="정선아리랑열차"></div>
+        <li><img src="./src/sub11_page2_img3.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img4.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img5.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img6.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img7.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img8.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img9.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img10.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img11.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img12.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img13.jpg" alt="열차이미지"></li>
+        <li><img src="./src/sub11_page2_img14.jpg" alt="열차이미지"></li>
+        <li class="w500px"><img src="./src/sub11_page2_img15.jpg" alt=""></li>
+        <li class="w500px"><img src="./src/sub11_page2_img16.jpg" alt=""></li>
+        <li class="w500px"><img src="./src/sub11_page2_img17.jpg" alt=""></li>
+    </section>
+    
+
+
+       <!--<section id="page3" class="page">
+        <h4 class="title">남도해양열차</h4>
+        <li><img src="/src/sub11_page3_img1.jpg" alt=""></li>
+        <li><img src="/src/sub11_page3_img2.jpg" alt=""></li>
+        <li><img src="/src/sub11_page3_img3.jpg" alt=""></li>
+        
+        
+    </section>
+    <div class="blank"></div>
+    <section id="page4" class="page">
+        <h4 class="title">서해금빛열차</h4>
+        <div class="pageban"><img src="./src/" alt=""></div>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+    </section>
+    <div class="blank"></div>
+    <section id="page5" class="page">
+        <h4 class="title">평화열차 DMZ</h4>
+        <div class="pageban"><img src="./src/" alt=""></div>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+    </section>
+    <div class="blank"></div>
+    <section id="page6" claess="page">
+        <h4 class="title">레일크루즈해랑</h4>
+        <div class="pageban"><img src="./src/" alt=""></div>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+        <li><img src="" alt=""></li>
+    </section>-->
+    
+    <div class="blank"></div>    
+    <input type="checkbox" id="ck1" class="ck1" >
+    <nav id="gnb">
+        <ul>
+            <li><a href="./sub1.html">열차여행</a></li>
+            <li><a href="./sub2.html">자유여행</a></li>
+            <li><a href="./sub3.html">여행상품</a></li>
+            <li><a href="./sub4.html">회의실</a></li>
+            <li><a href="#">기차역정보</a></li>
+            <li><a href="./login_form.php">로그인</a></li>
+        </ul>
+    </nav>
+    <li class="menubt"><label for="ck1" class="btn1" ><img src="./src/bt.png" alt="메뉴 띄우기 버튼"></label></li>
+    
+    <div class="uponft"></div>
+    <footer class="ft">
+        <p class="copyright">상호 : 한국철도공사 | 사업자등록 : 314-82-10024 | 통신판매업신고 : 대전동구-0233호 | COPYRIGHT © 2014 BY KOREA RAILROAD ALL RIGHT RESERVED | (34618) 대전광역시 동구 중앙로 240 | TEL : 1544-7788 | FAX : 042-632-6510
+        </p>
+    </footer>
+</body>
+</html>

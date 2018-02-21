@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>코레일톡 모바일 페이지에 오신 것을 환영합니다.</title>
+    <meta name="Subject" content="기차">
+    <meta name="Title" content="코레일톡">
+    <meta name="Description" content="열차예매정보">
+    <meta name="Keywords" content="기차,열차,기차예매,열차예매,내일로,코레일톡,KTX,KTX예매,교통수단,기차표,기차시간표,열차시간표">
+    <meta name="Author" content="이은미">
+    
+    
+   
+    <script type="text/javascript">
+    <!--//주소창 자동 닫힘
+    window.addEventListener("Load", function(){
+                            setTimeout(loaded, 100);
+                            }, false);
+        function loaded(){
+            window.scrollTo(0, 1);
+        }
+        //-->
+    
+    </script>
+    <!-- 데스크탑 브라우저의 탭에 아이콘 추가 -->
+    <link href="m_icon_128.png" rel="icon" /><!--또는-->
+    <link href="m_icon_128.ico" rel="icon" type="image/x-icon" />
+    
+    
+    <!-- iPhone의 반사광 효과가 없는 경우 -->
+    <link href="short_apple1.png" rel="apple-touch-icon-precomposed" />
+    
+    
+    <!--iPhone의 반사광이 있는 경우-->
+    <link href="short_apple2.png" rel="apple-touch-icon" />
+    
+    
+    <!-- iPhone icon(Retina) -->
+    <link href="m_icon_114.png" sizes="114x114" rel="apple-touch-icon" />
+    <!-- apple-touch-icon- 터치기반인 것.IOS 종류들을 의미함.-->
+    
+    
+    <!-- iPad icon(Retina) -->
+    <link href="apple-114x114.png" sizes="144x144" rel="apple-touch-icon" />
+    
+    
+    <!-- Android png의 경우 -->
+    <link href="favicon.png" rel="shortcut icon" />
+    <!--숏컷은 바로가기 아이콘, 아이콘은 브라우저 창에서의 아이콘을 의미.-->
+    
+    
+    <!-- Android ico의 경우 -->
+    <link href="favicon.ico" rel="shortcut icon" /><!-- 또는 -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="drop.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="colorguide.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <style>
+        /* 헤더 버튼 부분 */
+        .hd .btnbox{ position:absolute; width:100%; height:24px; top:15px; display:block; z-index:150; }
+        .hd .btn{ background-repeat:no-repeat; 
+                    top:5px;}
+        .hd .menubt1{ display:block; width:30px; height:24px; float:left; margin-left:10px; }
+        .hd .menubt2{ display:block; width:30px; height:24px; float:right; margin-right:5px; background-image:url("./src/dropdown_60x24.png");
+        background-position:-30px 0px; background-repeat:no-repeat; }
+        .hd .menubt2 label{ cursor:pointer; display:block; width:100%; height:100%; }
+        .hd .btnbox{ z-index:150; }
+        
+        /* 푸터 영역 */
+        .ft{ width:100%; height:auto; background-color:#222; bottom:0; }
+        .ft .copyright{ display:block; color:#fff; font-size:0.7em;
+            line-height:17px;}
+        
+        /* 전체 페이지 일반 */
+        .page{ width:85%; margin:0 auto; }
+        .page h3 { line-height:40px;}
+        .page .line{ width:100%; height:1px; background-color:#333; }
+        .blank{ width:100%; height:30px; }
+        .banner img{ display:block; width:100%; }
+        .pagetitle{ text-align:center; }
+        .pagetitle h4{ line-height:20px; color:#006600; font-size:1.1em; }
+        .pagetitle p{ line-height:20px; color:#333; font-size:0.9em; font-weight:500; }
+        
+        
+        /* 페이지1부분 */
+        #page1 .banner { clear:both; width:100%; margin-top:40px; box-shadow:-1px 1px 3px #aaa;  }
+        
+        
+        .railinfo{ width:100%; border:1px solid #666; border-collapse:collapse;
+                margin:0 auto;}
+        .railinfo .leftcol{ width:25%; font-size:0.8em; background-color:#666; 
+                            color:#fff; font-weight:100; }
+        .railinfo th, .railinfo td{ border:1px solid #333; padding:5px 5px; }
+        .railinfo .rightcol{ width:75%; font-size:0.8em; }
+        .railinfo .firstrow{ background-color:#666; }
+        .railinfo .firstrow th{ color:#fff; font-weight:100; }
+        
+        /* 페이지3부분 */
+        .railinfo caption{ font-weight:600; line-height:30px; }
+        #page3 .railinfo .leftcol{ width:20%; font-size:0.8em; background-color:#666; color:#fff; font-weight:100; }
+        #page3 .railinfo .centercol{ width:40%; font-size:0.8em; }
+        #page3 .railinfo .rightcol{ width:40%; font-size:0.8em; }
+    </style>
+<body>
+    <header class="hd maincolor">
+        <li class="logo">
+            <a href="./index.html"><img src="./src/logo2.png" alt="로고"></a>
+        </li>
+        <div class="btnbox">
+            <li class="btn menubt1">
+                <a href="index.html">
+                <img src="./src/home_30x24.png" alt="">
+                </a>
+            </li>
+            <li class="btn menubt2">
+                <label for="drop" class="drop">
+                </label>
+            </li>
+        </div>
+    </header>
+    <div class="blank"></div>
+    <input type="checkbox" id="drop" name="drop">
+    <div class="dropmenu">
+        <ul>
+            <li class="droplist subcolor"><a href="sub2.html#page1">내일로</a></li>
+            <li class="droplist subcolor"><a href="sub2.html#page2">하나로</a></li>
+            <li class="droplist subcolor"><a href="sub2.html#page3">문화누리패스</a></li>
+            <li class="droplist subcolor"><a href="sub2.html#page4">평창동계올림픽</a></li>
+        </ul>
+    </div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <section class="page" id="page1">
+        <div class="blank"></div>
+        <h3>내일로 패스</h3>
+        <div class="line"></div>
+        <div class="banner"><img src="./src/sub2_ban1.jpg" alt=""></div>
+        <div class="blank"></div>
+        <li class="pagetitle">
+            <h4>내일로 패스란?</h4>
+            <p>청년들이 일반 열차를 무제한 이용할 수 있는<br>철도 자유여행패스</p>
+        </li>
+        <div class="blank"></div>
+        <table class="railinfo">
+            <tr class="firstrow">
+                <th class="leftcol">구분</th>
+                <th class="rightcol">내일로</th>
+            </tr>
+            <tr>
+                <th class="leftcol">권종/가격</th>
+                <td class="rightcol">내일로 : 5일권(60,000원), 7일권(70,000원)</td>
+            </tr>
+            <tr>
+                <th class="leftcol">이용기간</th>
+                <td class="rightcol">5, 7일 <br>
+                [2017-18년 동계 운영기간]<br>
+                * 이용기간 : 2017.11.20(월)~2018.3.6(화)<br>
+                * 발매기간 : 2017.11.20(월)~2018.2.28(수)
+                * 코레일이 정한 특별대수송기간(설, 추석)은 이용이 중지됩니다.</td>
+            </tr>
+            <tr>
+                <th class="leftcol">이용대상</th>
+                <td class="rightcol">만 29세 이하 외국인</td>
+            </tr>
+            <tr>
+                <th class="leftcol">대상열차</th>
+                <td class="rightcol">패스 유효기간 중 ITX-청춘, ITX-새마을, 새마을, 누리로, 무궁화호, 통근열차의 자유석 및 입석</td>
+            </tr>
+            <tr>
+                <th class="leftcol">이용방법</th>
+                <td class="rightcol">※ 프리미엄내일로 패스틑 평일 중 월~목요일 KTX일반실 좌석지정하여 승차가능 (좌석지정권없이 KTX입석(자유석) 이용 시 부정승차 부가금 부과<br>
+                - 좌석지정권은 월~목요일(공휴일제외) 출발하는 KTX출발 7일전 역창구에서 잔여석이 있는 경우에 한하여 발행받을 수 있으며, 패스 유효기간 중 편도2회</td>
+            </tr>
+            <tr>
+                <th class="leftcol">발매창구</th>
+                <td class="rightcol">레츠코레일 홈페이지, 역창구, 코레일톡</td>
+            </tr>
+            <tr>
+                <th class="leftcol">확인서류</th>
+                <td class="rightcol">주민등록증, 여권 등</td>
+            </tr>
+            <tr>
+                <th class="leftcol">확인방법</th>
+                <td class="rightcol">차내에서 승무원이 신분증 및 티켓 확인</td>
+            </tr>
+            <tr>
+                <th class="leftcol">재발매</th>
+                <td class="rightcol">종이승차권은 분실 시 재발매하지 않습니다.</td>
+            </tr>
+            <tr>
+                <th class="leftcol">관광열차 및 일반열차</th>
+                <td class="rightcol">편도 4회<br>
+                - 일반열차 : 일반실 승차권 평일 50% 할인(KTX, ITX-청춘 제외)<br>
+                - 관광열차 : O S A V G DMZ-train 승차권 요일 관계없이 50% 할인</td>
+            </tr>
+            <tr>
+                <th class="leftcol">기타사항</th>
+                <td class="rightcol">* 평일 : 토요일, 일요일, 공휴일이 아닌 보통 날<br>
+                * 열차 지연보상 및 포인트 적립대상에서 제외되며, 서면상 기재하지 않은 기타 사항은 철도공사가 정한 여객운송약관 및 관련규정을 적용합니다. </td>
+            </tr>
+        </table>
+
+    </section>
+    <div class="blank"></div>
+    <section class="page" id="page2">
+        <div class="blank"></div>
+        <h3>하나로 패스</h3>
+        <div class="line"></div>
+        <div class="blank"></div>
+        <li class="pagetitle">
+            <h3>하나로 패스란?</h3>
+            <p>청년들이 일반 열차를 무제한 이용할 수 있는<br>철도 자유여행패스</p>
+        </li>
+        <div class="blank"></div>
+        <table class="railinfo">
+            <tr class="firstrow">
+                <th class="leftcol">구분</th>
+                <th class="rightcol">하나로 패스</th>
+            </tr>
+            <tr>
+                <th class="leftcol">이용대상</th>
+                <td class="rightcol">18세 이상 내국인</td>
+            </tr>
+            <tr>
+                <th class="leftcol">이용인원</th>
+                <td class="rightcol">1명</td>
+            </tr>
+            <tr>
+                <th class="leftcol">유효기간</th>
+                <td class="rightcol">사용 개시일로부터 3일</td>
+            </tr>
+            <tr>
+                <th class="leftcol">이용가격</th>
+                <td class="rightcol">65,000원</td>
+            </tr>
+            <tr>
+                <th class="leftcol">대상열차</th>
+                <td class="rightcol">ITX-청춘, 새마을(ITX-새마을), 누리로, 무궁화호의 입석(자유석)</td>
+            </tr>
+            <tr>
+                <th class="leftcol">이용방법</th>
+                <td class="rightcol">대상 열차의 일반식 1일 1편도(총3회) 좌석지정 가능<br>
+                * 좌석지정을 원할경우 열차이용 7일전부터 역창구, 여행센터에서 발매</td>
+            </tr>
+            <tr>
+                <th class="leftcol">운영기간</th>
+                <td class="rightcol">연중(설, 추석 등 대수송기간 제외)</td>
+            </tr>
+            <tr>
+                <th class="leftcol">판매기간</th>
+                <td class="rightcol">사용개시일 7일전부터 판매</td>
+            </tr>
+        </table>
+    </section>
+    
+    <div class="blank"></div>
+    <section class="page" id="page3">
+        <div class="blank"></div>
+        <h3>문화누리 패스</h3>
+        <div class="line"></div>
+        <div class="blank"></div>
+        <li class="pagetitle">
+            <h3>문화누리 패스란?</h3>
+            <p>코레일에서 새롭게 출시한 [문화누리패스]는 문화체육관광부 통합문화이용권 제도에 따라 <span style="color:#4776c1;">통합문화이용권 수혜자가 KTX 및 일반열차를 2~3일간 자유석 또는 입석으로 자유롭게 여행</span>하실 수 있는 <span style="color:powderblue#4776c1">[문화누리카드]전용 기명식 철도 패스</span>입니다.<br>
+            <span style="color:#a82715">* 구입은 문화누리카드 소지자만 가능합니다.</span></p>
+        </li>
+        <div class="blank"></div>
+        <table class="railinfo">
+           <caption>* 패스 권종 및 가격</caption>
+            <tr class="firstrow">
+                <th class="leftcol">권종</th>
+                <th class="centercol">2일권</th>
+                <th class="rightcol">3일권</th>
+            </tr>
+            <tr>
+                <th class="leftcol">가격</th>
+                <td class="centercol">59,800원</td>
+                <td class="rightcol">74,800원</td>
+            </tr>
+        </table>
+        <div class="blank"></div>
+        <div class="list">
+            <h4>구입방법</h4>
+            <p>문화누리레일패스는 전국 철도역 및 여행센터에서 구입하실 수 있습니다.</p>
+            <ul>
+                <li>문화누리패스는 이용 시작 날짜를 기준으로 7일 전부터 구입 가능</li>
+                <li>[문화누리카드] 또는 [문화누리카드+현금]으로만 구입가능</li>
+            </ul>
+        </div>
+        <div class="blank"></div>
+        <div class="list">
+            <h4>이용방법</h4>
+            <p>KTX, ITX-새마을, 새마을호, 무궁화호, 누리로 열차를 횟수와 구간에 관계없이 2일 또는 3일간 자유롭게 자유석 및 입석으로 여행하실 수 있습니다.</p>
+            <ul>
+                <li>코레일에서 지정한 명절 대수송기간은 이용불가</li>
+                <li>문화누리레일패스는 열차 지연 시 지연 보상에서 제외</li>
+                <li>표기된 기명인만 사용 가능하며, 신분증(여권)을 휴대해야 함</li>
+                <li>부정사용 시 정상가격의 10배에 해당하는 부가 운임 수수</li>
+            </ul>
+        </div>
+        <div class="blank"></div>
+        <div class="list">
+            <h4>반환 및 변경</h4>
+            <p>반환 및 변경은 이용 시작일 하루 전까지만 가능합니다. (단, 반환수수료 400원 발생)</p>
+        </div>
+        <div class="blank"></div>
+        <div class="list">
+            <h4>기타문의</h4>
+            <p>기타 자세한 사항은 주요역 여행센터 및 철도고객센터(1544-7788)로 문의 바랍니다.</p>
+        </div>
+    </section>
+    <div class="blank"></div>
+    <section class="page" id="page4">
+        <div class="blank"></div>
+        <h3>2018평창동계올림픽서울-강릉패스</h3>
+        <div class="line"></div>
+        <div class="banner"><img src="./src/sub2_ban4.jpg" alt=""></div>
+        <div class="blank"></div>
+        <li class="pagetitle">
+            <p>3, 5일간 서울-강릉 KTX를 이용할 수 있는<br>자유여행패스</p>
+        </li>
+        <div class="blank"></div>
+        <table class="railinfo">
+            <tr class="firstrow">
+                <th class="leftcol">구분</th>
+                <th class="rightcol">이용정보</th>
+            </tr>
+            <tr>
+                <th class="leftcol">종류/가격</th>
+                <td class="rightcol">3일권(100,000원), 5일권(168,000원)</td>
+            </tr>
+            <tr>
+                <th class="leftcol">운영기간</th>
+                <td class="rightcol">2018.1.3 (수) ~ 2018.3.31(토)<br>
+                * 판매기간 : 2018.1.3(수) ~ 2018.3.27(화)<br>
+                * 설 특별대수송기간(18.2.14 ~ 2.18)은 이용이 중지됩니다.</td>
+            </tr>
+            <tr>
+                <th class="leftcol">이용대상</th>
+                <td class="rightcol">내국인 (연령제한없음)</td>
+            </tr>
+            <tr>
+                <th class="leftcol">이용열차</th>
+                <td class="rightcol">패스 유효기간 중 서울-강릉 KTX및 영동·태백선 열차를 자유롭게 이용 (입석, 자유석)<br>
+                * 인천공항 - 강릉 KTX및 청량리-정동진 열차 이용 가능</td>
+            </tr>
+            <tr>
+                <th class="leftcol">좌석이용</th>
+                <td class="rightcol">3일권은 편도6회, 5일권은 편도 10회 이용열차의 좌석이용 가능<br>
+                - 좌석이용방법 : 패스에 포함된 할인증을 이용하여 코레일톡, 홈페이지에서 자가발권 또는 역 창구에서 좌석승차권 발권<br>
+                * 패스 유효기간 중 좌석 최대 이용 횟수만큼 사용 못하였더라도 패스 반환 불가
+                </td>
+            </tr>
+            <tr>
+                <th class="leftcol">패스형태</th>
+                <td class="rightcol">스마트폰 승차권 (MMS승차권, 종이승차권 운영)</td>
+            </tr>
+            <tr>
+                <th class="leftcol">판매매체</th>
+                <td class="rightcol">코레일톡, 레츠코레일홈페이지<br>
+                * 패스 사용시작일 7일전부터 예발매 가능</td>
+            </tr>
+            <tr>
+                <th class="leftcol">반환수수료</th>
+                <td class="rightcol">최저수수료 (400원)</td>
+            </tr>
+            <tr>
+                <th class="leftcol">신분확인</th>
+                <td class="rightcol">차내에서 승무원이 신분증 및 티켓 확인</td>
+            </tr>
+            <tr>
+                <th class="leftcol">기타사항</th>
+                <td class="rightcol">열차 지연보상 및 포인트 적립대상에서 제외<br>
+                * 코레일이 정한 여객운송약관 및 관련규정을 적용합니다.</td>
+            </tr>
+        </table>
+
+    </section>
+    
+ 
+    <div class="blank"></div>    
+    <input type="checkbox" id="ck1" class="ck1" >
+    <nav id="gnb">
+        <ul>
+            <li><a href="./sub1.html">열차여행</a></li>
+            <li><a href="./sub2.html">자유여행</a></li>
+            <li><a href="./sub3.html">여행상품</a></li>
+            <li><a href="./sub4.html">회의실</a></li>
+            <li><a href="#">기차역정보</a></li>
+            <li><a href="./login_form.php">로그인</a></li>
+        </ul>
+    </nav>
+    <li class="menubt"><label for="ck1" class="btn1" ><img src="./src/bt.png" alt="메뉴 띄우기 버튼"></label></li>
+
+    <footer class="ft">
+        <p class="copyright">상호 : 한국철도공사 | 사업자등록 : 314-82-10024 | 통신판매업신고 : 대전동구-0233호 | COPYRIGHT © 2014 BY KOREA RAILROAD ALL RIGHT RESERVED | (34618) 대전광역시 동구 중앙로 240 | TEL : 1544-7788 | FAX : 042-632-6510
+        </p>
+    </footer>
+</body>
+</html>

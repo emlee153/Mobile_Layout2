@@ -1,0 +1,41 @@
+57 X 57
+72 X 72
+114 X 114
+144 X 144
+128 X 128
+
+png파일을 ico파일로 변환하고 싶다면
+convertico 사이트에 가서 변환한다.
+
+
+
+    <!-- 데스크탑 브라우저의 탭에 아이콘 추가 -->
+    <link href="m_icon_128.png" rel="icon" /><!--또는-->
+    <link href="m_icon_128.ico" rel="icon" type="image/x-icon" />
+    
+    
+    <!-- iPhone의 반사광 효과가 없는 경우 -->
+    <link href="short_apple1.png" rel="apple-touch-icon-precomposed" />
+    
+    
+    <!--iPhone의 반사광이 있는 경우-->
+    <link href="short_apple2.png" rel="apple-touch-icon" />
+    
+    
+    <!-- iPhone icon(Retina) -->
+    <link href="apple-114x114.png" sizes="114x114" rel="apple-touch-icon" />
+    <!-- apple-touch-icon- 터치기반인 것.IOS 종류들을 의미함.-->
+    
+    
+    <!-- iPad icon(Retina) -->
+    <link href="apple-114x114.png" sizes="144x144" rel="apple-touch-icon" />
+    
+    
+    <!-- Android png의 경우 -->
+    <link href="favicon.png" rel="shortcut icon" />
+    <!--숏컷은 바로가기 아이콘, 아이콘은 브라우저 창에서의 아이콘을 의미.-->
+    
+    
+    <!-- Android ico의 경우 -->
+    <link href="favicon.ico" rel="shortcut icon" /><!-- 또는 -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />

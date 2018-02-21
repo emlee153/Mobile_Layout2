@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>코레일톡 모바일 페이지에 오신 것을 환영합니다.</title>
+    <meta name="Subject" content="기차">
+    <meta name="Title" content="코레일톡">
+    <meta name="Description" content="열차예매정보">
+    <meta name="Keywords" content="기차,열차,기차예매,열차예매,내일로,코레일톡,KTX,KTX예매,교통수단,기차표,기차시간표,열차시간표">
+    <meta name="Author" content="이은미">
+    
+    
+   
+    <script type="text/javascript">
+    <!--//주소창 자동 닫힘
+    window.addEventListener("Load", function(){
+                            setTimeout(loaded, 100);
+                            }, false);
+        function loaded(){
+            window.scrollTo(0, 1);
+        }
+        //-->
+    
+    </script>
+    <!-- 데스크탑 브라우저의 탭에 아이콘 추가 -->
+    <link href="m_icon_128.png" rel="icon" /><!--또는-->
+    <link href="m_icon_128.ico" rel="icon" type="image/x-icon" />
+    
+    
+    <!-- iPhone의 반사광 효과가 없는 경우 -->
+    <link href="short_apple1.png" rel="apple-touch-icon-precomposed" />
+    
+    
+    <!--iPhone의 반사광이 있는 경우-->
+    <link href="short_apple2.png" rel="apple-touch-icon" />
+    
+    
+    <!-- iPhone icon(Retina) -->
+    <link href="m_icon_114.png" sizes="114x114" rel="apple-touch-icon" />
+    <!-- apple-touch-icon- 터치기반인 것.IOS 종류들을 의미함.-->
+    
+    
+    <!-- iPad icon(Retina) -->
+    <link href="apple-114x114.png" sizes="144x144" rel="apple-touch-icon" />
+    
+    
+    <!-- Android png의 경우 -->
+    <link href="favicon.png" rel="shortcut icon" />
+    <!--숏컷은 바로가기 아이콘, 아이콘은 브라우저 창에서의 아이콘을 의미.-->
+    
+    
+    <!-- Android ico의 경우 -->
+    <link href="favicon.ico" rel="shortcut icon" /><!-- 또는 -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="drop.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="colorguide.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        /* 헤더 버튼 부분 */
+        .hd .btnbox{ position:absolute; width:100%; height:24px; top:15px; display:block; z-index:150; }
+        .hd .btn{ background-repeat:no-repeat; 
+                    top:5px;}
+        .hd .menubt1{ display:block; width:30px; height:24px; float:left; margin-left:10px; }
+        .hd .menubt2{ display:block; width:30px; height:24px; float:right; margin-right:5px; background-image:url("./src/dropdown_60x24.png");
+        background-position:-30px 0px; background-repeat:no-repeat; }
+        .hd .menubt2 label{ cursor:pointer; display:block; width:100%; height:100%; }
+        .hd .btnbox{ z-index:150; }
+        
+        /* 푸터 영역 */
+        .uponft{ position:relative; width:100%; height:1750px;}
+        .ft{ width:100%; height:auto; background-color:#222; bottom:0; }
+        .ft .copyright{ display:block; color:#fff; font-size:0.7em;
+            line-height:17px;}
+        
+        /* 전체 페이지 일반 */
+        .page{ width:85%; margin:0 auto; }
+        .page h3 { line-height:40px;}
+        .page .line{ width:100%; height:1px; background-color:#333; }
+        .blank{ width:100%; height:30px; }
+        .banner img{ display:block; width:100%; }
+        .pagetitle{ text-align:center; }
+        .pagetitle h4{ line-height:20px; color:#006600; font-size:1.1em; }
+        .pagetitle p{ line-height:20px; color:#333; font-size:0.9em; font-weight:500; }
+        
+        
+        /* 페이지1부분 */
+        .page .ctbox{ width:100%; }
+        .ctbox .content1{ width:100%; }
+        .ctlist { display:block; width:45.5%; height:280px; float:left; border:2px solid #ccc; box-sizing:border-box; margin-left:3%; margin-bottom:10px; margin-top:10px; border-radius:5px; }
+        .ctlist a{ text-align:center; display:block; margin:10px auto; }
+        .ctlist h5{ color:#000; line-height:18px; text-align:left; padding:7px; }
+        .ctlist img{ width:85%; }
+        .ctlist p{ clear:both; color:#000; font-size:0.8em; }
+        .ctlist p span{ font-size:0.7rem; }        
+        
+    </style>
+<body>
+    <header class="hd maincolor">
+        <li class="logo">
+            <a href="./index.html"><img src="./src/logo2.png" alt="로고"></a>
+        </li>
+        <div class="btnbox">
+            <li class="btn menubt1">
+                <a href="index.html">
+                <img src="./src/home_30x24.png" alt="">
+                </a>
+            </li>
+            <li class="btn menubt2">
+                <label for="drop" class="drop">
+                </label>
+            </li>
+        </div>
+    </header>
+    <div class="blank"></div>
+    <input type="checkbox" id="drop" name="drop">
+    <div class="dropmenu">
+        <ul>
+            <li class="droplist subcolor"><a href="sub3.html#page1">수도권</a></li>
+            <li class="droplist subcolor"><a href="sub3.html#page2">강원권</a></li>
+            <li class="droplist subcolor"><a href="sub3.html#page3">충청권</a></li>
+            <li class="droplist subcolor"><a href="sub3.html#page4">경상권</a></li>
+            <li class="droplist subcolor"><a href="sub3.html#page5">전라권</a></li>
+            <li class="droplist subcolor"><a href="sub3.html#page6">제주권</a></li>        
+        </ul>
+    </div>
+    <div class="blank"></div>
+    <div class="blank"></div>
+    <section class="page" id="page1">
+        <div class="blank"></div>
+        <h3>국내패키지-수도권</h3>
+        <div class="blank"></div>
+        <div class="ctbox">
+            <ul class="content1">
+                <li class="ctlist">
+                    <a href="sub3_1.html">
+                        <img src="./src/sub3_1.jpg" alt="">
+                        <h5>[가을여행주간] KTX와 함께 낭만여행 한강 레일크루즈</h5>
+                        <p>요금 : 100,400원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_2.html">
+                        <img src="./src/sub3_2.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 (철도레일+어린이 직업체험 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_3.html">
+                        <img src="./src/sub3_3.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 시즌2 (철도여행+어린이 직업체헙 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_4.html">
+                        <img src="./src/sub3_4.jpg" alt="">
+                        <h5>[기획특가] KTX서울명소 알찬 베스트4 (당일가이드투어)</h5>
+                        <p>요금 : 83,300원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_5.html">
+                        <img src="./src/sub3_5.jpg" alt="">
+                        <h5>[기획특가] I SEOUL YOU 서울시티투어(당일)</h5>
+                        <p>요금 : 105,400원<br>
+                            <span>문의 : 아름여행사 07046670286</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_6.html">
+                        <img src="./src/sub3_6.jpg" alt="">
+                        <h5>[기획특가] KTX로 떠나는 환상의 나라 에버렌드+노보텔 1박2일 자유여행(2인기준)</h5>
+                        <p>요금 : 312,600원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_7.html">
+                        <img src="./src/sub3_7.jpg" alt="">
+                        <h5>[기획특가] KTX와 함께하는 한강유람선과 북촌한복체험 (1박2일)</h5>
+                        <p>요금 : 91,900원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_8.html">
+                        <img src="./src/sub3_8.jpg" alt="">
+                        <h5>[레일시티투어 서울] 서울시티투어 순환형(경부선)</h5>
+                        <p>요금 : 98,800원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_9.html">
+                        <img src="./src/sub3_9.jpg" alt="">
+                        <h5>[레일텔] KTX(왕복)+호텔 더 디자이너스 서울역(1박,2인기준)</h5>
+                        <p>요금 : 240,200원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_10.html">
+                        <img src="./src/sub3_10.jpg" alt="">
+                        <h5>[수도권동부본부] 서울 도심 강남 일일투어(1탄)</h5>
+                        <p>요금 : 60,800월
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="page" id="page2">
+        <div class="blank"></div>
+        <h3>국내패키지-강원권</h3>
+        <div class="blank"></div>
+        <div class="ctbox">
+            <ul class="content1">
+                <li class="ctlist">
+                    <a href="sub3_1.html">
+                        <img src="./src/sub3_1.jpg" alt="">
+                        <h5>[가을여행주간] KTX와 함께 낭만여행 한강 레일크루즈</h5>
+                        <p>요금 : 100,400원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_2.html">
+                        <img src="./src/sub3_2.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 (철도레일+어린이 직업체험 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_3.html">
+                        <img src="./src/sub3_3.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 시즌2 (철도여행+어린이 직업체헙 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_4.html">
+                        <img src="./src/sub3_4.jpg" alt="">
+                        <h5>[기획특가] KTX서울명소 알찬 베스트4 (당일가이드투어)</h5>
+                        <p>요금 : 83,300원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_5.html">
+                        <img src="./src/sub3_5.jpg" alt="">
+                        <h5>[기획특가] I SEOUL YOU 서울시티투어(당일)</h5>
+                        <p>요금 : 105,400원<br>
+                            <span>문의 : 아름여행사 07046670286</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_6.html">
+                        <img src="./src/sub3_6.jpg" alt="">
+                        <h5>[기획특가] KTX로 떠나는 환상의 나라 에버렌드+노보텔 1박2일 자유여행(2인기준)</h5>
+                        <p>요금 : 312,600원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_7.html">
+                        <img src="./src/sub3_7.jpg" alt="">
+                        <h5>[기획특가] KTX와 함께하는 한강유람선과 북촌한복체험 (1박2일)</h5>
+                        <p>요금 : 91,900원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_8.html">
+                        <img src="./src/sub3_8.jpg" alt="">
+                        <h5>[레일시티투어 서울] 서울시티투어 순환형(경부선)</h5>
+                        <p>요금 : 98,800원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_9.html">
+                        <img src="./src/sub3_9.jpg" alt="">
+                        <h5>[레일텔] KTX(왕복)+호텔 더 디자이너스 서울역(1박,2인기준)</h5>
+                        <p>요금 : 240,200원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_10.html">
+                        <img src="./src/sub3_10.jpg" alt="">
+                        <h5>[수도권동부본부] 서울 도심 강남 일일투어(1탄)</h5>
+                        <p>요금 : 60,800월
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="page" id="page3">
+        <div class="blank"></div>
+        <h3>국내패키지-충청권</h3>
+        <div class="blank"></div>
+        <div class="ctbox">
+            <ul class="content1">
+                <li class="ctlist">
+                    <a href="sub3_1.html">
+                        <img src="./src/sub3_1.jpg" alt="">
+                        <h5>[가을여행주간] KTX와 함께 낭만여행 한강 레일크루즈</h5>
+                        <p>요금 : 100,400원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_2.html">
+                        <img src="./src/sub3_2.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 (철도레일+어린이 직업체험 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_3.html">
+                        <img src="./src/sub3_3.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 시즌2 (철도여행+어린이 직업체헙 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_4.html">
+                        <img src="./src/sub3_4.jpg" alt="">
+                        <h5>[기획특가] KTX서울명소 알찬 베스트4 (당일가이드투어)</h5>
+                        <p>요금 : 83,300원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_5.html">
+                        <img src="./src/sub3_5.jpg" alt="">
+                        <h5>[기획특가] I SEOUL YOU 서울시티투어(당일)</h5>
+                        <p>요금 : 105,400원<br>
+                            <span>문의 : 아름여행사 07046670286</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_6.html">
+                        <img src="./src/sub3_6.jpg" alt="">
+                        <h5>[기획특가] KTX로 떠나는 환상의 나라 에버렌드+노보텔 1박2일 자유여행(2인기준)</h5>
+                        <p>요금 : 312,600원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_7.html">
+                        <img src="./src/sub3_7.jpg" alt="">
+                        <h5>[기획특가] KTX와 함께하는 한강유람선과 북촌한복체험 (1박2일)</h5>
+                        <p>요금 : 91,900원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_8.html">
+                        <img src="./src/sub3_8.jpg" alt="">
+                        <h5>[레일시티투어 서울] 서울시티투어 순환형(경부선)</h5>
+                        <p>요금 : 98,800원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_9.html">
+                        <img src="./src/sub3_9.jpg" alt="">
+                        <h5>[레일텔] KTX(왕복)+호텔 더 디자이너스 서울역(1박,2인기준)</h5>
+                        <p>요금 : 240,200원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_10.html">
+                        <img src="./src/sub3_10.jpg" alt="">
+                        <h5>[수도권동부본부] 서울 도심 강남 일일투어(1탄)</h5>
+                        <p>요금 : 60,800월
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="page" id="page4">
+        <div class="blank"></div>
+        <h3>국내패키지-경상권</h3>
+        <div class="blank"></div>
+        <div class="ctbox">
+            <ul class="content1">
+                <li class="ctlist">
+                    <a href="sub3_1.html">
+                        <img src="./src/sub3_1.jpg" alt="">
+                        <h5>[가을여행주간] KTX와 함께 낭만여행 한강 레일크루즈</h5>
+                        <p>요금 : 100,400원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_2.html">
+                        <img src="./src/sub3_2.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 (철도레일+어린이 직업체험 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_3.html">
+                        <img src="./src/sub3_3.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 시즌2 (철도여행+어린이 직업체헙 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_4.html">
+                        <img src="./src/sub3_4.jpg" alt="">
+                        <h5>[기획특가] KTX서울명소 알찬 베스트4 (당일가이드투어)</h5>
+                        <p>요금 : 83,300원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_5.html">
+                        <img src="./src/sub3_5.jpg" alt="">
+                        <h5>[기획특가] I SEOUL YOU 서울시티투어(당일)</h5>
+                        <p>요금 : 105,400원<br>
+                            <span>문의 : 아름여행사 07046670286</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_6.html">
+                        <img src="./src/sub3_6.jpg" alt="">
+                        <h5>[기획특가] KTX로 떠나는 환상의 나라 에버렌드+노보텔 1박2일 자유여행(2인기준)</h5>
+                        <p>요금 : 312,600원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_7.html">
+                        <img src="./src/sub3_7.jpg" alt="">
+                        <h5>[기획특가] KTX와 함께하는 한강유람선과 북촌한복체험 (1박2일)</h5>
+                        <p>요금 : 91,900원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_8.html">
+                        <img src="./src/sub3_8.jpg" alt="">
+                        <h5>[레일시티투어 서울] 서울시티투어 순환형(경부선)</h5>
+                        <p>요금 : 98,800원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_9.html">
+                        <img src="./src/sub3_9.jpg" alt="">
+                        <h5>[레일텔] KTX(왕복)+호텔 더 디자이너스 서울역(1박,2인기준)</h5>
+                        <p>요금 : 240,200원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_10.html">
+                        <img src="./src/sub3_10.jpg" alt="">
+                        <h5>[수도권동부본부] 서울 도심 강남 일일투어(1탄)</h5>
+                        <p>요금 : 60,800월
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="page" id="page5">
+        <div class="blank"></div>
+        <h3>국내패키지-전라권</h3>
+        <div class="blank"></div>
+        <div class="ctbox">
+            <ul class="content1">
+                <li class="ctlist">
+                    <a href="sub3_1.html">
+                        <img src="./src/sub3_1.jpg" alt="">
+                        <h5>[가을여행주간] KTX와 함께 낭만여행 한강 레일크루즈</h5>
+                        <p>요금 : 100,400원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_2.html">
+                        <img src="./src/sub3_2.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 (철도레일+어린이 직업체험 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_3.html">
+                        <img src="./src/sub3_3.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 시즌2 (철도여행+어린이 직업체헙 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_4.html">
+                        <img src="./src/sub3_4.jpg" alt="">
+                        <h5>[기획특가] KTX서울명소 알찬 베스트4 (당일가이드투어)</h5>
+                        <p>요금 : 83,300원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_5.html">
+                        <img src="./src/sub3_5.jpg" alt="">
+                        <h5>[기획특가] I SEOUL YOU 서울시티투어(당일)</h5>
+                        <p>요금 : 105,400원<br>
+                            <span>문의 : 아름여행사 07046670286</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_6.html">
+                        <img src="./src/sub3_6.jpg" alt="">
+                        <h5>[기획특가] KTX로 떠나는 환상의 나라 에버렌드+노보텔 1박2일 자유여행(2인기준)</h5>
+                        <p>요금 : 312,600원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_7.html">
+                        <img src="./src/sub3_7.jpg" alt="">
+                        <h5>[기획특가] KTX와 함께하는 한강유람선과 북촌한복체험 (1박2일)</h5>
+                        <p>요금 : 91,900원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_8.html">
+                        <img src="./src/sub3_8.jpg" alt="">
+                        <h5>[레일시티투어 서울] 서울시티투어 순환형(경부선)</h5>
+                        <p>요금 : 98,800원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_9.html">
+                        <img src="./src/sub3_9.jpg" alt="">
+                        <h5>[레일텔] KTX(왕복)+호텔 더 디자이너스 서울역(1박,2인기준)</h5>
+                        <p>요금 : 240,200원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_10.html">
+                        <img src="./src/sub3_10.jpg" alt="">
+                        <h5>[수도권동부본부] 서울 도심 강남 일일투어(1탄)</h5>
+                        <p>요금 : 60,800월
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="page" id="page6">
+        <div class="blank"></div>
+        <h3>국내패키지-제주권</h3>
+        <div class="blank"></div>
+        <div class="ctbox">
+            <ul class="content1">
+                <li class="ctlist">
+                    <a href="sub3_1.html">
+                        <img src="./src/sub3_1.jpg" alt="">
+                        <h5>[가을여행주간] KTX와 함께 낭만여행 한강 레일크루즈</h5>
+                        <p>요금 : 100,400원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_2.html">
+                        <img src="./src/sub3_2.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 (철도레일+어린이 직업체험 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_3.html">
+                        <img src="./src/sub3_3.jpg" alt="">
+                        <h5>[교육/영등포] 키즈레일 시즌2 (철도여행+어린이 직업체헙 테마파크)</h5>
+                        <p>요금 : 0원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_4.html">
+                        <img src="./src/sub3_4.jpg" alt="">
+                        <h5>[기획특가] KTX서울명소 알찬 베스트4 (당일가이드투어)</h5>
+                        <p>요금 : 83,300원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_5.html">
+                        <img src="./src/sub3_5.jpg" alt="">
+                        <h5>[기획특가] I SEOUL YOU 서울시티투어(당일)</h5>
+                        <p>요금 : 105,400원<br>
+                            <span>문의 : 아름여행사 07046670286</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_6.html">
+                        <img src="./src/sub3_6.jpg" alt="">
+                        <h5>[기획특가] KTX로 떠나는 환상의 나라 에버렌드+노보텔 1박2일 자유여행(2인기준)</h5>
+                        <p>요금 : 312,600원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_7.html">
+                        <img src="./src/sub3_7.jpg" alt="">
+                        <h5>[기획특가] KTX와 함께하는 한강유람선과 북촌한복체험 (1박2일)</h5>
+                        <p>요금 : 91,900원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_8.html">
+                        <img src="./src/sub3_8.jpg" alt="">
+                        <h5>[레일시티투어 서울] 서울시티투어 순환형(경부선)</h5>
+                        <p>요금 : 98,800원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_9.html">
+                        <img src="./src/sub3_9.jpg" alt="">
+                        <h5>[레일텔] KTX(왕복)+호텔 더 디자이너스 서울역(1박,2인기준)</h5>
+                        <p>요금 : 240,200원<br>
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="ctlist">
+                    <a href="sub3_10.html">
+                        <img src="./src/sub3_10.jpg" alt="">
+                        <h5>[수도권동부본부] 서울 도심 강남 일일투어(1탄)</h5>
+                        <p>요금 : 60,800월
+                            <span>문의 : 한국철도공사 0231492024</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+ 
+    <div class="blank"></div>    
+    <input type="checkbox" id="ck1" class="ck1" >
+    <nav id="gnb">
+        <ul>
+            <li><a href="./sub1.html">열차여행</a></li>
+            <li><a href="./sub2.html">자유여행</a></li>
+            <li><a href="./sub3.html">여행상품</a></li>
+            <li><a href="./sub4.html">회의실</a></li>
+            <li><a href="#">기차역정보</a></li>
+            <li><a href="./login_form.php">로그인</a></li>
+        </ul>
+    </nav>
+    <li class="menubt"><label for="ck1" class="btn1" ><img src="./src/bt.png" alt="메뉴 띄우기 버튼"></label></li>
+    <div class="uponft"></div>
+    <footer class="ft">
+        <p class="copyright">상호 : 한국철도공사 | 사업자등록 : 314-82-10024 | 통신판매업신고 : 대전동구-0233호 | COPYRIGHT © 2014 BY KOREA RAILROAD ALL RIGHT RESERVED | (34618) 대전광역시 동구 중앙로 240 | TEL : 1544-7788 | FAX : 042-632-6510
+        </p>
+    </footer>
+</body>
+</html>
